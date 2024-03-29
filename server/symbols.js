@@ -4,9 +4,9 @@ const arcane = {
   },
   mesoCost: function (region, lvl) {
     const regionVar = {
-      vj: 8,
+      vanishing: 8,
       chuchu: 10,
-      lach: 12,
+      lachelein: 12,
       arcana: 14,
       morass: 16,
       esfera: 18,
@@ -30,8 +30,6 @@ const sacred = {
       arteria: 20.4,
       carcion: 22.2,
     };
-    // console.log(regionVar[region] - 0.6 * lvl);
-    // console.log((regionVar[region] * 10 - 0.6 * 10 * lvl) / 10); // do this so there are no floating point errors
     return (
       100000 *
       Math.floor(
@@ -41,11 +39,3 @@ const sacred = {
     );
   },
 };
-
-const lvl = 19;
-const region = 'esfera';
-// console.log(`symbol cost for lvl ${lvl}: `, sacred.symCost(lvl));
-// console.log(
-//   `meso cost to upgrade lvl ${lvl} ${region} symbol: `,
-//   arcane.mesoCost(region, lvl)
-// );
