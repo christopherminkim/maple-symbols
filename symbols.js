@@ -39,7 +39,3 @@ export const sacred = {
     );
   },
 };
-
-export function hi(param) {
-  console.log(param);
-}
